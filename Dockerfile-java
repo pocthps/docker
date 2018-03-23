@@ -31,6 +31,7 @@ RUN echo 'a=10'>>/home/java-app/dead.sh
 RUN echo 'while [ $a -lt 20 ]'>>/home/java-app/dead.sh
 RUN echo 'do'>>/home/java-app/dead.sh
 RUN echo '  date'>>/home/java-app/dead.sh
+RUN echo '  sleep 10m'>>/home/java-app/dead.sh
 RUN echo 'done'>>/home/java-app/dead.sh
 RUN chmod u+x /home/java-app/dead.sh
 
