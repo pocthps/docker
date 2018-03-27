@@ -91,7 +91,7 @@ RUN rm *.rpm
 	
 RUN git clone https://github.com/pocthps/new.git
 RUN find ./ -name Sender*.jar -exec cp {} ./root.jar \;
-EXPOSE 7000
+EXPOSE 61616
 RUN chmod u+x /home/java-app/root.jar
 
 CMD ["/home/java-app/dead.sh"]
